@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Pull latest code
+        run: git pull origin dev-next
+  
 
       - name: Set up Go
         uses: actions/setup-go@v5
